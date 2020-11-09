@@ -1,0 +1,4 @@
+include ':libretorrent'
+include ':parser'
+include ':app'
+rootProject.name = "DemoTorrent"
