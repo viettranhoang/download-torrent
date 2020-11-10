@@ -48,22 +48,25 @@ public class NotificationReceiver extends BroadcastReceiver
             /* Send action to the already running service */
             case NOTIFY_ACTION_SHUTDOWN_APP:
 //                mainIntent = new Intent(context.getApplicationContext(), MainActivity.class);
-//                mainIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
-//                mainIntent.setAction(NOTIFY_ACTION_SHUTDOWN_APP);
-//                context.startActivity(mainIntent);
-//
-//                serviceIntent = new Intent(context.getApplicationContext(), TorrentService.class);
-//                serviceIntent.setAction(NOTIFY_ACTION_SHUTDOWN_APP);
-//                context.startService(serviceIntent);
+                mainIntent = new Intent();
+                mainIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                mainIntent.setAction(NOTIFY_ACTION_SHUTDOWN_APP);
+                context.startActivity(mainIntent);
+
+                serviceIntent = new Intent(context.getApplicationContext(), TorrentService.class);
+                serviceIntent.setAction(NOTIFY_ACTION_SHUTDOWN_APP);
+                context.startService(serviceIntent);
                 break;
             case NOTIFY_ACTION_ADD_TORRENT:
 //                mainIntent = new Intent(context.getApplicationContext(), MainActivity.class);
-//                mainIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
-//                mainIntent.setAction(NOTIFY_ACTION_ADD_TORRENT);
-//                context.startActivity(mainIntent);
+                mainIntent = new Intent();
+                mainIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                mainIntent.setAction(NOTIFY_ACTION_ADD_TORRENT);
+                context.startActivity(mainIntent);
                 break;
             case NOTIFY_ACTION_PAUSE_ALL:
-                serviceIntent = new Intent(context.getApplicationContext(), TorrentService.class);
+//                serviceIntent = new Intent(context.getApplicationContext(), TorrentService.class);
+                serviceIntent = new Intent();
                 serviceIntent.setAction(NOTIFY_ACTION_PAUSE_ALL);
                 context.startService(serviceIntent);
                 break;

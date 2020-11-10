@@ -311,9 +311,9 @@ public class TorrentEngine
 
     public void forceStop()
     {
-//        Intent i = new Intent(appContext, TorrentService.class);
-//        i.setAction(TorrentService.ACTION_SHUTDOWN);
-//        Utils.startServiceBackground(appContext, i);
+        Intent i = new Intent(appContext, TorrentService.class);
+        i.setAction(TorrentService.ACTION_SHUTDOWN);
+        Utils.startServiceBackground(appContext, i);
     }
 
     /*

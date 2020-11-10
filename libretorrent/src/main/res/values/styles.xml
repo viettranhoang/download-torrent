@@ -9,9 +9,9 @@
     <style name="AppTheme.Translucent" parent="BaseTheme.Translucent" />
     <style name="AppTheme.Translucent.Dark" parent="BaseTheme.Translucent.Dark" />
     <style name="AppTheme.Translucent.Black" parent="BaseTheme.Translucent.Black" />
-    <style name="AppTheme.Settings" parent="BaseTheme.Settings" />
-    <style name="AppTheme.Settings.Dark" parent="BaseTheme.Settings.Dark" />
-    <style name="AppTheme.Settings.Black" parent="BaseTheme.Settings.Black" />
+<!--    <style name="AppTheme.Settings" parent="BaseTheme.Settings" />-->
+<!--    <style name="AppTheme.Settings.Dark" parent="BaseTheme.Settings.Dark" />-->
+<!--    <style name="AppTheme.Settings.Black" parent="BaseTheme.Settings.Black" />-->
     <style name="AppTheme.Launcher" parent="BaseTheme.Launcher" />
 
     <style name="BaseTheme" parent="Theme.MaterialComponents.Light">
@@ -211,24 +211,6 @@
         <item name="android:colorBackgroundCacheHint">@null</item>
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:windowAnimationStyle">@null</item>
-
-        <item name="statusBarColor">@android:color/black</item>
-    </style>
-
-    <style name="BaseTheme.Settings" parent="BaseTheme">
-        <item name="android:layout">@layout/fragment_custom_preference</item>
-
-        <item name="statusBarColor">@color/primary_dark</item>
-    </style>
-
-    <style name="BaseTheme.Settings.Dark" parent="BaseTheme.Dark">
-        <item name="android:layout">@layout/fragment_custom_preference</item>
-
-        <item name="statusBarColor">@color/background_dark</item>
-    </style>
-
-    <style name="BaseTheme.Settings.Black" parent="BaseTheme.Black">
-        <item name="android:layout">@layout/fragment_custom_preference</item>
 
         <item name="statusBarColor">@android:color/black</item>
     </style>

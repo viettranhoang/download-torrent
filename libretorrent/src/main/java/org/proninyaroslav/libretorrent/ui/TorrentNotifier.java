@@ -48,9 +48,9 @@ public class TorrentNotifier
     @SuppressWarnings("unused")
     private static final String TAG = TorrentNotifier.class.getSimpleName();
 
-    public static final String FOREGROUND_NOTIFY_CHAN_ID = "org.proninyaroslav.libretorrent.FOREGROUND_NOTIFY_CHAN";
-    public static final String DEFAULT_NOTIFY_CHAN_ID = "org.proninyaroslav.libretorrent.DEFAULT_NOTIFY_CHAN_ID";
-    public static final String FINISH_NOTIFY_CHAN_ID = "org.proninyaroslav.libretorrent.FINISH_NOTIFY_CHAN_ID";
+    public static final String FOREGROUND_NOTIFY_CHAN_ID = "com.vit.demotorrent.FOREGROUND_NOTIFY_CHAN";
+    public static final String DEFAULT_NOTIFY_CHAN_ID = "com.vit.demotorrent.DEFAULT_NOTIFY_CHAN_ID";
+    public static final String FINISH_NOTIFY_CHAN_ID = "com.vit.demotorrent.FINISH_NOTIFY_CHAN_ID";
 
     private static final int SESSION_ERROR_NOTIFICATION_ID = 1;
     private static final int NAT_ERROR_NOTIFICATION_ID = 2;
